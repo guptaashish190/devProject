@@ -1,0 +1,172 @@
+
+#back{
+	margin:0px;
+	padding:0px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:0;
+}
+#backB{
+	margin:0px;
+	padding:0px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:-1;
+}
+.linkButtons{
+	background-image:url("images/backButtonM.png");
+	padding:5px 10px;
+	background-size:500px 50px;
+	background-repeat:no-repeat;
+	transition: transform .5s ease 0s;
+	box-shadow:4px 0px 100px #101010;
+}
+
+.buttonText{
+	font-size:30px;
+	font-family: arial;
+	font-weight:bold;
+	color:white;
+	text-decoration:none;
+}
+
+#menu{
+	position:fixed;
+	top:30%;
+	left:0px;
+	z-index:1;
+}
+
+#home{
+	width:130px;
+	transform: translateX(-96px);
+}
+#Register{
+	width:166px;
+	transform: translateX(-132px);
+	
+}
+#Gravitas{
+	width:166px;
+	transform: translateX(-132px);
+}
+#Codespace{
+	width:207px;
+	transform: translateX(-172px);
+}
+#home:hover,#Register:hover,#Gravitas:hover,#Codespace:hover{
+	transform: translateX(0px);
+}
+
+#titleImg{
+	
+	position:absolute;
+	top:1%;
+	left: 30%;
+	width: 500px;
+	height:130px;
+	z-index:3;
+	transition:transform 0.3s ease 0s;
+}
+#titleImg:hover{
+	transform:scale(1.1,1.1);
+}
+#backContainer{
+	transition:opacity 0.3s ease 0s;
+	
+}
+#titleImg:hover ~ #backContainer{
+	opacity:0;
+}
+#homeContent{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px
+}
+.homeMenuClass{
+	
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight:bold;
+	display:inline;
+	text-decoration:none;
+	width:30px;
+	color:#000;
+	height:100px;
+	position:relative;
+	z-index:3;
+	bottom:0px;
+	padding:10px;
+	border-radius:5px;
+	margin:10px;
+	background-image:linear-gradient(#6c828a,#57686e);
+	transition: all 0.3s ease 0s;
+
+}
+.homeMenuClass:hover{
+	box-shadow:0px 0px 10px #9ed5ff;
+	color:#9ed5ff;
+}
+ul#homeContentMenu{
+	position:absolute;
+	z-index:3;
+	top:20%;
+	right:5%;
+	
+}
+#Content1{
+	background-image:url("images/backContent.png");
+	border-radius:10px;
+	color:#182229;
+	font-size:20px;
+	padding:20px 40px ;
+	position:fixed;
+	top:30%;
+	left:18%;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	z-index:3;
+}
+.menuResp{
+	display:none;
+}
+
+
+@media only screen and (max-width:550px){
+	ul#homeContentMenu{
+		display:none;
+	}
+	.menuResp{
+	display:block;
+	position:absolute;
+	z-index:3;
+	border-radius:5px;
+		
+	}
+	.dropDownElements{
+		display:none;
+	}
+	.dropDownElements a{
+		
+		background-image:linear-gradient(#6c828a,#57686e);
+		padding:10px;
+		border: 2px solid black;
+		display:block;
+		text-decoration:none;
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+		
+	}
+		
+	.navMenuRespE1{
+		background-image:linear-gradient(#6c828a,#57686e);
+		text-decoration:none;
+		font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+		padding:10px;
+		border: 2px solid black;
+	}
+	.menuResp:hover  .dropDownElements{
+		display:block;
+	}
+}
